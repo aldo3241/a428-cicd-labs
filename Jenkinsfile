@@ -19,7 +19,7 @@ pipeline{
         stage('Deploy'){
           steps{
             sh './jenkins/scripts/deliver.sh'
-            notify 'Sudah sele1`sai menggunakan React App? (React app akan Auto abort dalam 1 menit)'
+            notify 'Sudah selesai menggunakan React App? (React app akan Auto abort dalam 1 menit)'
             sleep 60
             sh './jenkins/scripts/kill.sh'
           }
